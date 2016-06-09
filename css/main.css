@@ -430,6 +430,10 @@ button:active, button:focus {
   text-align: center;
 }
 
+.col-x2{
+  width: 50%;
+}
+
 .authorize {
   display: inline-block;
   position: absolute;
@@ -719,9 +723,6 @@ button:active, button:focus {
 }
 
 /**partners**/
-.partners {
-  margin: -5px;
-}
 .partners:before, .partners:after {
   content: "";
   display: table;
@@ -732,16 +733,23 @@ button:active, button:focus {
 
 .partners__item {
   background-color: white;
-  padding: 15px;
+  padding: 10px;
+  margin: 5px;
   display: block;
   float: left;
-  width: 50%;
+  width: 45%;
   border: 1px solid #e9ebec;
   border-radius: 3px;
   height: 77px;
-  box-sizing: content-box;
+}
+.partners__item::after {
+  content: '';
+  height: 100%;
+  width: 0px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .partners__item img {
   vertical-align: middle;
-  width: 100%;
+  max-width: 100%;
 }

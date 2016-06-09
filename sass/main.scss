@@ -318,22 +318,30 @@ button:active, button:focus{
 /**partners**/
 
 .partners{
-	margin: -5px;
 	@include clearfix;
 
 }
 .partners__item{
 	background-color: white;
-	padding: 15px;
+	padding: 10px;
+	margin: 5px;
 	display: block;
-	float:left;
-	width: 50%;
+	float: left;
+	width: 45%;
 	border: 1px solid #e9ebec;
 	border-radius: 3px;
 	height: 77px;
-	box-sizing: content-box;
+	&::after{
+		content: '';
+		height: 100%;
+		width: 0px;
+		display: inline-block;
+		vertical-align: middle;	
+	}
 	& img{
 		vertical-align: middle;
-		width: 100%;
-	}
+		max-width: 100%;
+		// margin:10px;
+	}	
+	
 }
